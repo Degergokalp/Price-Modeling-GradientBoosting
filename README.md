@@ -1,4 +1,5 @@
 # Price-Modeling-GradientBoosting
+-------------------------the fields should be customized based on your dataset's fields-------------------------
 This is a pricing optimization model using Gradient Boosting Regression. It predicts the optimal price based on market conditions and past sales data. Users can adjust hyperparameters and values based on their needs. It improves profitability and competitiveness.
 
 
@@ -7,12 +8,15 @@ optimal price for a product in a given market
 The script reads data from a CSV file ('output_data.csv'), processes it by selecting relevant
 columns and removing rows with missing or infinite values, and then trains a
 GradientBoostingRegressor model on this data.
+
 next_period_profit = output_X *( output_own_price - output_own_cost)
+
 The user can choose whether or not to use hyperparameters for the model by specifying the
 flag input (flag="True" for using hyperparameters, anything but not True not for using
 hyperparameters). If hyperparameters are used, the user can also change the values of the
 hyperparameters n_estimators, learning_rate, max_depth, min_samples_split, and
 min_samples_leaf by modifying their values in the script.
+
 ● n_estimators: This is the number of decision trees that will be used in the boosting
 process. Increasing the number of trees can increase the model's performance, but
 may also increase the risk of overfitting the training data.
@@ -31,11 +35,13 @@ thus less accurate.
 node in a decision tree. Similar to min_samples_split, increasing this value can lead
 to simpler models that are less likely to overfit, but may also result in a less
 expressive model.
+
 The effect of these hyperparameters on the model's performance can vary depending on the
 specific dataset and problem being addressed. In general, finding the optimal combination of
 hyperparameters requires some trial and error and experimentation with different values.
 ps: The default values are very optimistic for this caase(nearlly 20000 rows of data for 55
 different id), but still, you can change the values
+
 Once the model is trained, the user can use the function 'predict_price' to predict the
 optimal price for a given market condition. The function takes as input a dictionary of
 predicted market conditions, including the market ID, output_X (market condition), and
