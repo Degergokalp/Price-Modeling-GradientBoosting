@@ -55,3 +55,23 @@ period based on the input data. Finally, the script prints out the recommended p
 next period based on the inputs provided to the 'predict_price' function
 
 
+Description of variables in data:
+
+• “mkt_id” - identifier for the market
+
+• “output_date” - identifier for the period (day)
+
+• “output_own_price” - own price set in the period (day)
+
+• “output_own_cost” - own per-unit cost of goods sold for the period
+
+• “output_comp_price” - average of competitor prices in the period
+
+• “output_X” - a variable summarizing market conditions in the period (on a scale between 0 and 100)
+
+• “output_own_sales” - own sales in the period
+
+• “Output_own_share” - own sales share in the period
+
+• “Output_own_profits” - own total profits in the period
+
