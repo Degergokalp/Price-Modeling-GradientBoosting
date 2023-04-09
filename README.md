@@ -1,5 +1,6 @@
 # Price-Modeling-GradientBoosting
 -------------------------the fields should be customized based on your dataset's fields-------------------------
+
 This is a pricing optimization model using Gradient Boosting Regression. It predicts the optimal price based on market conditions and past sales data. Users can adjust hyperparameters and values based on their needs. It improves profitability and competitiveness.
 
 
@@ -20,6 +21,7 @@ min_samples_leaf by modifying their values in the script.
 ● n_estimators: This is the number of decision trees that will be used in the boosting
 process. Increasing the number of trees can increase the model's performance, but
 may also increase the risk of overfitting the training data.
+
 ● learning_rate: This is the amount that each decision tree is allowed to correct the
 errors of the previous tree. A lower learning rate can lead to a more conservative
 model that generalizes better to new data, while a higher learning rate can lead to a
@@ -27,10 +29,12 @@ more complex model that is better at fitting the training data.
 ● max_depth: This is the maximum depth of each decision tree. Increasing the depth
 can increase the model's ability to fit complex data, but may also increase the risk of
 overfitting the training data.
+
 ● min_samples_split: This is the minimum number of samples required to split an
 internal node in a decision tree. Increasing this value can lead to simpler models that
 are less likely to overfit, but may also result in a model that is less expressive and
 thus less accurate.
+
 ● min_samples_leaf: This is the minimum number of samples required to be at a leaf
 node in a decision tree. Similar to min_samples_split, increasing this value can lead
 to simpler models that are less likely to overfit, but may also result in a less
